@@ -34,7 +34,7 @@ func (dao *DAO) GetUserName(id int) (string, error) {
 	err := dao.db.QueryRowContext(dao.ctx, "SELECT name FROM test0.user WHERE id=?", id).Scan(&username)
 	switch {
 	case err == sql.ErrNoRows:
-		return username, errors.Wrapf(err, "no user with id %d\n", id)
+		return username, errors.WithMessagef(err, "no user with id %d\n", id)
 	case err != nil:
 		return username, errors.Wrap(err, "get user id fail")
 	default:
