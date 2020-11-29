@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf81cd33-402c-49f5-b5a0-40066a2508b6" name="Default Changelist" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week02/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Week02/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week02/homework/dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/Week02/homework/dao.go" afterDir="false" />
-    </list>
+    <list default="true" id="cf81cd33-402c-49f5-b5a0-40066a2508b6" name="Default Changelist" comment="final version" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,7 +94,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="final version" />
+    <option name="LAST_COMMIT_MESSAGE" value="final version" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -144,10 +141,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="521" y="214" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606633852858" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1606654842353">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1606655470354">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606654842353" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606655470354" />
     <state x="762" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605268517924">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
