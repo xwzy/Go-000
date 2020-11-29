@@ -8,28 +8,30 @@ import (
 	"log"
 )
 
-var (
+type DAO struct {
 	ctx context.Context
-	// 此处的db未初始化
-	db *sql.DB
-)
+	db  *sql.DB
+}
 
-func init() {
+func DAOFactory() *DAO {
+	dao := new(DAO)
 	var err error
-	db, err = sql.Open("mysql",
+	dao.db, err = sql.Open("mysql",
 		"root:123456@tcp(127.0.0.1:3306)/test0")
 	if err != nil {
 		// 数据库无法连接直接panic
 		log.Panic(err)
+		return nil
 	} else {
 		log.Println("Connect MySQL success")
-		ctx = context.Background()
+		dao.ctx = context.Background()
 	}
+	return dao
 }
 
-func GetUserName(id int) (string, error) {
+func (dao *DAO) GetUserName(id int) (string, error) {
 	var username string
-	err := db.QueryRowContext(ctx, "SELECT name FROM test0.user WHERE id=?", id).Scan(&username)
+	err := dao.db.QueryRowContext(dao.ctx, "SELECT name FROM test0.user WHERE id=?", id).Scan(&username)
 	switch {
 	case err == sql.ErrNoRows:
 		return username, errors.Wrapf(err, "no user with id %d\n", id)

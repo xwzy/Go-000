@@ -9,7 +9,17 @@ import (
 	"strconv"
 )
 
-func handleGetUserNameByID(c *gin.Context) {
+func ServiceFactory() *Service {
+	service := new(Service)
+	service.dao = DAOFactory()
+	return service
+}
+
+type Service struct {
+	dao *DAO
+}
+
+func (s *Service) handleGetUserNameByID(c *gin.Context) {
 	id := c.Param("id")
 	idIntValue, err := strconv.Atoi(id)
 
@@ -21,7 +31,7 @@ func handleGetUserNameByID(c *gin.Context) {
 		return
 	}
 
-	name, err := GetUserName(idIntValue)
+	name, err := s.dao.GetUserName(idIntValue)
 
 	if err != nil {
 		log.Printf("%+v", err)

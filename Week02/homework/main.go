@@ -5,7 +5,8 @@ import (
 )
 
 func main() {
+	service := ServiceFactory()
 	router := gin.Default()
-	router.GET("/user/:id", handleGetUserNameByID)
+	router.GET("/user/:id", service.handleGetUserNameByID)
 	router.Run(":8080")
 }
