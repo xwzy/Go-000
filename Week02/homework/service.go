@@ -38,12 +38,18 @@ func (s *Service) handleGetUserNameByID(c *gin.Context) {
 		if errors.Is(err, sql.ErrNoRows) {
 			// 如果是未找到此用户ID，直接返回404
 			c.AbortWithStatus(http.StatusNotFound)
-			return
+		} else {
+			// 其他错误可降级处理
+			c.String(http.StatusOK, "您好：%s", getDefaultUserName())
+			// 或者返回500错误
+			// c.AbortWithStatus(http.StatusInternalServerError)
 		}
-		// 其他错误降级处理
-		c.String(http.StatusOK, "您好：游客")
 		return
 	}
 	// 正常返回
 	c.String(http.StatusOK, "您好：%s", name)
+}
+
+func getDefaultUserName() string {
+	return "XXXX用户"
 }
