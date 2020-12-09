@@ -2,8 +2,6 @@ package main
 
 import (
 	"context"
-	"errors"
-	"fmt"
 	"golang.org/x/sync/errgroup"
 	"io"
 	"log"
@@ -12,6 +10,48 @@ import (
 	"os/signal"
 	"syscall"
 )
+
+func main() {
+	ctx, done := context.WithCancel(context.Background())
+	g, _ := errgroup.WithContext(ctx)
+
+	service1 := startHttpServer1(g)
+	service2 := startHttpServer2(g)
+	service3 := startHttpServer3(g)
+
+	log.Println("Start services!")
+	// 用于捕捉SIGTERM的goroutine
+	g.Go(func() error {
+		// 注册linux (kill -15) 信号
+		signalChannel := make(chan os.Signal, 1)
+		signal.Notify(signalChannel, os.Interrupt, syscall.SIGTERM)
+
+		select {
+		case sig := <-signalChannel:
+			log.Printf("Received signal: %s\n", sig)
+			if err := service1.Shutdown(context.Background()); err != nil {
+				log.Panicf("Service1 exit fail: %v\n", err)
+			}
+			if err := service2.Shutdown(context.Background()); err != nil {
+				log.Panicf("Service2 exit fail: %v\n", err)
+			}
+			if err := service3.Shutdown(context.Background()); err != nil {
+				log.Panicf("Service3 exit fail: %v\n", err)
+			}
+			done()
+		}
+		return nil
+	})
+
+	// 等待所有GoRoutine终止
+	err := g.Wait()
+
+	if err != nil {
+		log.Printf("Exit with : %v\n", err)
+	} else {
+		log.Println("Exit!")
+	}
+}
 
 func startHttpServer1(group *errgroup.Group) *http.Server {
 	service := &http.Server{Addr: ":8001"}
@@ -31,6 +71,7 @@ func startHttpServer1(group *errgroup.Group) *http.Server {
 
 	return service
 }
+
 func startHttpServer2(group *errgroup.Group) *http.Server {
 	service := &http.Server{Addr: ":8002"}
 
@@ -49,6 +90,7 @@ func startHttpServer2(group *errgroup.Group) *http.Server {
 
 	return service
 }
+
 func startHttpServer3(group *errgroup.Group) *http.Server {
 	service := &http.Server{Addr: ":8003"}
 
@@ -66,58 +108,4 @@ func startHttpServer3(group *errgroup.Group) *http.Server {
 	})
 
 	return service
-}
-
-func main() {
-
-	ctx, done := context.WithCancel(context.Background())
-	g, gctx := errgroup.WithContext(ctx)
-
-	// 用于捕捉SIGTERM的goroutine
-	g.Go(func() error {
-		signalChannel := make(chan os.Signal, 1)
-		signal.Notify(signalChannel, os.Interrupt, syscall.SIGTERM)
-
-		select {
-		case sig := <-signalChannel:
-			fmt.Printf("Received signal: %s\n", sig)
-			done()
-		case <-gctx.Done():
-			fmt.Printf("closing signal goroutine\n")
-			return gctx.Err()
-		}
-
-		return nil
-	})
-
-	service1 := startHttpServer1(g)
-	service2 := startHttpServer2(g)
-	service3 := startHttpServer3(g)
-
-	// 进行
-	g.Go(func() error {
-		for {
-			select {
-			case <-gctx.Done():
-				fmt.Printf("Receiving done\n")
-				service1.Shutdown(context.Background())
-				service2.Shutdown(context.Background())
-				service3.Shutdown(context.Background())
-				return gctx.Err()
-			}
-		}
-	})
-
-	// 等待所有GoRoutine终止
-	err := g.Wait()
-
-	if err != nil {
-		if errors.Is(err, context.Canceled) {
-			fmt.Println("Exit all http server gracefully!")
-		} else {
-			fmt.Printf("Exit with error: %v\n", err)
-		}
-	} else {
-		fmt.Println("Exit!")
-	}
 }

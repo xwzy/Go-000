@@ -20,12 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20fc7b12-28f4-4a83-8878-76001dbfc811" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +87,10 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="week 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="week 3" />
+  </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
   </component>
@@ -98,6 +99,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="752" y="353" key="#Go_Modules/0.0.1920.1040@0.0.1920.1040" timestamp="1607443895789" />
+    <state x="727" y="434" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607528041441">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="727" y="434" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607528041441" />
     <state width="1302" height="231" key="GridCell.Tab.0.bottom" timestamp="1607445568585">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -118,5 +123,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="291" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607526714868" />
+    <state x="382" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607527208875">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="382" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607527208875" />
   </component>
 </project>
