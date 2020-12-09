@@ -19,7 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf81cd33-402c-49f5-b5a0-40066a2508b6" name="Default Changelist" comment="final version" />
+    <list default="true" id="cf81cd33-402c-49f5-b5a0-40066a2508b6" name="Default Changelist" comment="final version">
+      <change afterPath="$PROJECT_DIR$/Week03/.idea/codestream.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week03/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week03/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,7 +62,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Week03" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RunManager">
@@ -113,10 +118,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="902" y="446" key="#GOROOT/0.0.1920.1040@0.0.1920.1040" timestamp="1606633615012" />
-    <state x="867" y="327" key="FileChooserDialogImpl" timestamp="1606633691601">
+    <state x="342" y="254" key="FileChooserDialogImpl" timestamp="1607357416205">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="867" y="327" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606633691601" />
+    <state x="342" y="254" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607357416205" />
     <state width="1877" height="297" key="GridCell.Tab.0.bottom" timestamp="1606655219391">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -141,10 +146,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="521" y="214" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606633852858" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1606655470354">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1606656816740">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606655470354" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606656816740" />
     <state x="762" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605268517924">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
