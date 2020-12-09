@@ -13,6 +13,7 @@ import (
 
 func main() {
 	ctx, done := context.WithCancel(context.Background())
+	defer done()
 	g, _ := errgroup.WithContext(ctx)
 
 	service1 := startHttpServer1(g)
