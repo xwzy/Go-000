@@ -78,3 +78,10 @@ func startHttpServer1(group *errgroup.Group) *http.Server {
 2020/12/09 23:32:32 Server3 exit
 2020/12/09 23:32:32 Exit with : http: Server closed
 ```
+
+## 参考资料
+https://pkg.go.dev/golang.org/x/sync/errgroup
+https://pkg.go.dev/net/http
+https://zhuanlan.zhihu.com/p/146472834?utm_source=ZHShareTargetIDMore
+https://stackoverflow.com/questions/39320025/how-to-stop-http-listenandserve
+https://gist.github.com/pteich/c0bb58b0b7c8af7cc6a689dd0d3d26ef
