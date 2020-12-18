@@ -21,8 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="20fc7b12-28f4-4a83-8878-76001dbfc811" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +88,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="week 3" />
     <MESSAGE value="update README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="update README.md" />
+    <MESSAGE value="final version" />
+    <option name="LAST_COMMIT_MESSAGE" value="final version" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -124,9 +123,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="291" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607526714868" />
-    <state x="382" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607528581426">
+    <state x="382" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607530457918">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="382" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607528581426" />
+    <state x="382" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607530457918" />
   </component>
 </project>
