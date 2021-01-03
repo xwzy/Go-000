@@ -20,8 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d840119f-611e-42f0-b721-40343904efd7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Week03/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Week03/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +30,9 @@
   <component name="GOROOT" path="$PROJECT_DIR$/../../../../../Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="2lmcmgpc" />
   </component>
   <component name="ProjectId" id="1lpgIUYGJTnZ2rXCUCZezZOBYBE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -61,5 +63,20 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="真的想哭" />
+    <option name="LAST_COMMIT_MESSAGE" value="真的想哭" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="536" y="267" key="Vcs.Push.Dialog.v2" timestamp="1608299825638">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="536" y="267" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608299825638" />
+    <state x="748" y="447" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608455281650">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="748" y="447" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608455281650" />
   </component>
 </project>
